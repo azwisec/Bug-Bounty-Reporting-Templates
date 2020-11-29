@@ -1,0 +1,32 @@
+No Rate Limit  
+
+Summary : No Rate Limit is a type of computer security vulnerability typically found in web applications. No Rate Limit  enables attackers to perform actions on the web application where the attacker can do signup creation, password reset or 2FA of other users. No Rate Limit vulnerability may be used by attackers to bypass access controls such & bruteforce tokens and passwords without any limiting of any requests. There should be protection on the web application for sensitive actions. Attackers send a high number of requests to perform desirable actions to get access to the application or accounts. 
+NO RL effects vary in range from petty nuisance to significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the nature of any security mitigation implemented by the site's owner network.
+
+
+Severity :   High  
+
+POST Request : 
+
+Complexity : Easy 
+
+From : Remote / External
+
+Steps to Reproduce: 
+
+Impact :An Adversary can carry out No Rate-Limit attack and also can take over the victim Account. 
+Also, an adversary can manage to login through any other user's account.
+
+Affected IP's : IP Address	Port
+https://www.example.com/	443
+
+Recommendations : 
+There should be a protection on the web application for limiting the users simultaneous requests.
+Any user should be Rate limited if He/She sends or races high amount of requests in a significant amount of time.
+ 
+References : 
+https://hackerone.com/reports/743545
+https://hackerone.com/reports/385381
+https://hackerone.com/reports/297359
+
+Proof of Concept :
