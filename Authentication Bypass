@@ -1,0 +1,31 @@
+Authentication Bypass 
+
+Summary :Authentication Bypass is a dangerous vulnerability which is found in Web-Applications. Attackers can bypass the control mechanisms which are used by the underlying web application like OTP, Captcha, 2FA, Email verification etc. 
+An Attacker can perform a  complete Account takeover of Victim.
+
+
+Severity :   High  
+
+Complexity : Easy 
+
+From : Remote / External
+
+Steps to Reproduce:
+
+ Proof of Concept : Attached in the Video
+
+
+Impact : An Adversary can carry out Auth Bypass attack and perform an Account Take Over
+
+Affected IP's : IP Address	 Port
+https://www.example.com/      443
+
+Recommendations : 
+The application should protect the sensitive actions and validate the verification process of the web application. Restrict the user for any malicious behaviour.
+ 
+References : 
+https://hackerone.com/reports/770504
+https://hackerone.com/reports/257305
+https://hackerone.com/reports/219205
+
+Proof of Concept :
