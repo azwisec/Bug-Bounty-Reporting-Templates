@@ -1,0 +1,34 @@
+HTML Injection
+
+Summary : When an application does not properly handle user supplied data, an attacker can supply valid HTML code, typically via a parameter value, and inject their own content into the page. This attack is typically used in conjunction with some form of social engineering, as the attack is exploiting a code-based vulnerability and a user's trust.
+
+Severity :   Medium  
+
+POST Request : 
+
+Complexity : Easy 
+
+From : Remote / External
+
+Steps to Reproduce:
+
+1. Attacker finds the vulnerable injection point (parameter)
+2. Attacker is able to inject the HTML Tags and it gets executed
+3. Attacker is able to perfrom successfull HTML Injection
+
+Impact : An Adversary can carry out HMTLi attack to trick the victim in clicking the link and visiting the website, this way attacker can perfrom identify theft and steal credentials.
+
+Affected IP's : IP Address	Port
+https://www.india.gov.in/	443
+
+Recommendations : 
+Do not allow parsing or execution of HTML tags from the user input.
+
+References : 
+https://www.acunetix.com/vulnerabilities/web/html-injection/#:~:text=HTML%20Injection%20is%20an%20attack,injection%20of%20certain%20HTML%20tags.
+https://www.softwaretestinghelp.com/html-injection-tutorial/
+
+
+Proof of Concept :
+
+Attached Screenshot or Video
