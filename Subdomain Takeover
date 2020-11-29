@@ -1,0 +1,35 @@
+Subdomain Takeover
+
+Summary : A Subdomain Takeover is defined as Subdomain takeover attacks are a class of security issues where an attacker is able to seize control of an organizationâ€™s subdomain via cloud services like AWS or Azure
+
+Severity :   High  
+
+POST Request : 
+
+Complexity : Easy 
+
+From : Remote / External
+
+Steps to Reproduce:
+
+1. Attacker finds the vulnerable subdomain (DANGLING DNS RECORD)
+2. Attacker is able to claim the subdomain on the cloud service
+3. Attacker is succesfully perfrom the Subdomain Takeover Attack
+
+Impact : An Adversary can carry out Subdomain Takeover attack to claim the unclaimed subdomains from the target website and host malicious content on the claimed subdomains.
+He can also perform Identity thefts by hosting malicious login pages etc..
+
+Affected IP's : IP Address	Port
+https://www.india.gov.in/	443
+
+Recommendations : 
+Fix all the broken links in the web application to any external resources.
+
+References : 
+https://medium.com/@friendly_/subdomain-takeover-awarded-200-8296f4abe1b0
+https://safaras.medium.com/find-your-first-bug-1-subdomain-takeover-8c7e6192220f
+
+
+Proof of Concept :
+
+Attached Screenshot or Video
