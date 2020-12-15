@@ -1,0 +1,180 @@
+How To Write A Good Bug Report? Tips And Tricks
+Why good Bug Report?
+
+If your Bug report is effective, then its chances to get fixed are higher. So fixing a bug depends upon how effectively you report it. Reporting a bug is nothing but skill and I will explain how to achieve this skill.
+
+“The point of writing problem report(bug report) is to get bugs fixed” – By Cem Kaner. If a tester is not reporting a bug correctly, the programmer will most likely reject this bug stating it as irreproducible. 
+
+This can hurt the testers moral and sometimes the ego too. (I suggest not to keep any type of ego. The ego’s like “I have reported the bug correctly”, “I can reproduce it”, “Why he/she has rejected the bug?”, “It’s not my fault” etc.,).
+
+
+
+What Are The Qualities Of A Good Software Bug Report?
+Anyone can write a Bug report. But not everyone can write an effective Bug report.
+
+You should be able to distinguish between an average bug report and a good bug report. How to distinguish between a good and bad Bug Report? It’s very simple, apply the following characteristics and techniques to report a bug.
+
+Characteristics and Techniques include
+
+#1) Having a clearly specified Bug Number: Always assign a unique number to each bug report. This, in turn, will help you to identify the bug record. If you are using any automated bug-reporting tool then this unique number will be generated automatically each time while you report the bug.
+
+Note the number and a brief description of each bug that you reported.
+
+#2) Reproducible: If your bug is not reproducible, then it will never get fixed.
+
+You should clearly mention the steps to reproduce the bug. Do not assume or skip any reproducing step. A bug which is described Step by step is easy to reproduce and fix.
+
+#3) Be Specific: Do not write an essay about the problem.
+
+Be Specific and to the point. Try to summarize the problem in minimum words yet in an effective way. Do not combine multiple problems even if they seem to be similar. Write different reports for each problem.
+
+Effective Bug Reporting
+Bug reporting is an important aspect of Software Testing. An effective Bug report communicates well with the development team and avoids confusion or miscommunication.
+
+A good Bug report should be clear and concise without any missing key points. Any lack of clarity leads to misunderstanding and slows down the development process as well.  Defect writing and reporting is one of the most important but neglected areas in the testing life cycle.
+
+Good writing is very important for filing a bug. The most important point that a tester should keep in mind is not to use a commanding tone in the report. This breaks the morale and creates an unhealthy work relationship. Use a suggestive tone.
+
+Don’t assume that the developer has done a mistake and hence you can use harsh words. Before reporting, it is equally important to check if the same bug has been reported or not.
+
+A duplicate bug is a burden in the testing cycle. Check the whole list of known bugs. At times, the developers might have known the issue and ignored for a future release. Tools like Bugzilla which automatically searches for duplicate bugs can also be used. However, it is best to manually search for any duplicate bug.
+
+The import information that a bug report must communicate is “How?” and “Where?” The report should clearly answer how the test was performed and where the defect occurred exactly. The reader should easily reproduce the bug and find where the bug is.
+
+Keep in mind that the objective of writing the Bug report is to enable the developer to visualize the problem. He/She should clearly understand the defect from the Bug report. Remember to give all the relevant information that the developer is seeking.
+
+Also, bear in mind that a bug report would be preserved for future use and should be well written with the required information. Use meaningful sentences and simple words to describe your bugs. Don’t use confusing statements that wastes the time of the reviewer.
+
+Report each bug as a separate issue. In case of multiple issues in a single Bug report, you can’t close it unless all the issues are resolved.
+
+Hence it is best to split the issues into separate bugs. This ensures that each bug can be handled separately. A well-written bug report helps a developer to reproduce the bug at their terminal. This helps them to diagnose the issue as well.
+
+How To Report A Bug?
+Use the following simple Bug report template:
+
+This is a simple Bug report format. It may vary depending upon the Bug report tool that you are using. If you are writing a bug report manually then some fields need to be mentioned specifically like the Bug number, which should be assigned manually.
+
+Reporter: Your name and email address.
+
+Product: In which product you found this bug.
+
+Version: The product version if any.
+
+Component: These are the major sub-modules of the product.
+
+Platform: Mention the hardware platform where you found this bug. The various platforms like ‘PC’, ‘MAC’, ‘HP’, ‘Sun’ etc.
+
+Operating system: Mention all the operating systems where you found the bug. Operating systems like Windows, Linux, Unix, SunOS, Mac OS. Mention the different OS versions also like Windows NT, Windows 2000, Windows XP etc, if applicable.
+
+Priority: When should a bug be fixed? Priority is generally set from P1 to P5. P1 as “fix the bug with the highest priority” and P5 as ” Fix when time permits”.
+
+Severity: This describes the impact of the bug.
+Types of Severity:
+
+Blocker: No further testing work can be done.
+Critical: Application crash, Loss of data.
+Major: Major loss of function.
+Minor: Minor loss of function.
+Trivial: Some UI enhancements.
+Enhancement: Request for a new feature or some enhancement in the existing one.
+Status: When you are logging the bug into any bug tracking system then by default the bug status will be ‘New’.
+Later on, the bug goes through various stages like Fixed, Verified, Reopen, Won’t Fix, etc.
+
+=> Click here to read more about the detailed Bug Life Cycle.
+
+Assign To: If you know which developer is responsible for that particular module in which the bug occurred, then you can specify the email address of that developer. Else keep it blank as this will assign the bug to the module owner if not the Manager will assign the bug to the developer. Possibly add the manager’s email address in the CC list.
+
+URL: The page URL on which the bug occurred.
+
+Summary: A brief summary of the bug mostly in 60 words or below. Make sure your summary is reflecting on what the problem is and where it is.
+
+Description: A detailed description of the bug.
+
+Use the following fields for the description field:
+
+Reproduce steps: Clearly, mention the steps to reproduce the bug.
+Expected result: How the application should behave on the above-mentioned steps.
+Actual result: What is the actual result of running the above steps i.e. the bug behavior.
+These are the important steps in the bug report. You can also add the “Report type” as one more field which will describe the bug type.
+
+Report types include:
+
+1) Coding error
+2) Design error
+3) New Suggestion
+4) Documentation issue
+5) Hardware problem
+
+Important Features In Your Bug Report
+Given below are the important features in the Bug report:
+
+#1) Bug Number/id
+A Bug number or an identification number (like swb001) makes bug reporting and referring to a bug much easier. The developer can easily check if a particular bug has been fixed or not. It makes the whole testing and retesting process smoother and easier.
+
+#2) Bug Title
+A Bug title is read more often than any other part of the bug report. It should say all about what comes in the bug.
+
+The Bug title should be suggestive enough that the reader can understand it. A clear bug title makes it easy to understand and the reader can know if the bug has been reported earlier or has been fixed.
+
+#3) Priority
+Based on the severity of the bug, a priority can be set for it. A bug can be a Blocker, Critical, Major, Minor, Trivial, or a suggestion. A bug priority from P1 to P5 can be given so that the important ones are viewed first.
+
+#4) Platform/Environment
+The OS and browser configuration is necessary for a clear bug report. It is the best way to communicate how the bug can be reproduced.
+
+Without the exact platform or environment, the application may behave differently and the bug at the tester’s end may not replicate on the developer’s end. So it is best to mention clearly the environment in which the bug was detected.
+
+#5) Description
+Bug description helps the developer to understand the bug. It describes the problem encountered. The poor description will create confusion and waste the time of the developers and the testers as well.
+
+It is necessary to communicate clearly about the effect of the description. It’s always helpful to use complete sentences. It is a good practice to describe each problem separately instead of crumbling them altogether. Don’t use terms like “I think” or “I believe”.
+
+#6) Steps to Reproduce
+A good Bug report should clearly mention the steps to reproduce. The steps should include actions that cause the bug. Don’t make generic statements. Be specific in the steps to follow.
+
+A good example of a well-written procedure is given below
+
+Steps:
+
+Select product Abc01.
+Click on Add to cart.
+Click Remove to remove the product from the cart.
+#7) Expected and Actual Result
+A Bug description is incomplete without the Expected and Actual results. It is necessary to outline what is the outcome of the test and what the user should expect. The reader should know what the correct outcome of the test is. Clearly, mention what happened during the test and what was the outcome.
+
+#8) Screenshot
+A picture is worth a thousand words. Take a Screenshot of the instance of failure with proper captioning to highlight the defect. Highlight unexpected error messages with light red color. This draws attention to the required area.
+
+Some Bonus Tips To Write A Good Bug Report
+Given below are some more additional tips to write a good Bug report:
+
+#1) Report the problem immediately
+
+ If you find any bug while testing, then need not wait to write a detail bug report later. Instead, write the bug report immediately. This will ensure a good and reproducible Bug report. If you decide to write the Bug report later on then there are high chances to miss the important steps in your report.
+
+#2) Reproduce the bug three times before writing a Bug report
+
+Your bug should be reproducible. Make sure that your steps are robust enough to reproduce the bug without any ambiguity. If your bug is not reproducible every time you can still file a bug mentioning the periodic nature of the bug.
+
+#3) Test the same bug occurrence on other similar modules 
+
+Sometimes the developer uses the same code for different similar modules. So there are higher chances for the bug in one module to occur in other similar modules as well. You can even try to find the more severe version of the bug you found.
+
+#4) Write a good bug summary
+
+Bug summary will help the developers to quickly analyze the bug nature. A poor quality report will unnecessarily increase the development and testing time. Communicate well with your bug report summary. Keep in mind that the bug summary is used as a reference to search the bug in bug inventory.
+
+#5) Read the Bug report before hitting the Submit button
+
+Read all the sentences, wordings and steps that are used in the bug report. See if any sentence is creating ambiguity that can lead to misinterpretation. Misleading words or sentences should be avoided in order to have a clear bug report.
+
+#6) Do not use Abusive language
+
+It’s nice that you did good work and found a bug but do not use this credit for criticizing the developer or to attack any individual.
+
+Conclusion
+No doubt that your bug report should be a high-quality document.
+
+Focus on writing good bug reports and spend some time on this task because this is the main communication point between the tester, developer and the manager. Managers should create an awareness of their team that writing a good Bug report is the primary responsibility of any tester.
+
+Your effort towards writing a good Bug report will not only save the resources of the company but also create a good relationship between you and the developers.
