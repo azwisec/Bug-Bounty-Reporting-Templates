@@ -1,0 +1,33 @@
+SAMPLE BUG REPORT
+Bug Name: Application crash on clicking the SAVE button while creating a new user.
+Bug ID: (It will be automatically created by the BUG Tracking tool once you save this bug)
+Area Path: USERS menu > New Users
+Build Number: Version Number 5.0.1
+Severity: HIGH (High/Medium/Low) or 1
+Priority: HIGH (High/Medium/Low) or 1
+Assigned to: Developer-X
+Reported By: Your Name
+Reported On: Date
+Reason: Defect
+Status: New/Open/Active (Depends on the Tool you are using)
+Environment: Windows 2003/SQL Server 2005
+
+Description:
+Application crash on clicking the SAVE button while creating a new
+the user, hence unable to create a new user in the application.
+
+Steps To Reproduce:
+1) Login into the Application
+2) Navigate to the Users Menu > New User
+3) Filled all the user information fields
+4) Clicked on the ‘Save’ button
+5) Seen an error page “ORA1090 Exception: Insert values Error…”
+6) See the attached logs for more information (Attach more logs related to bug..IF any)
+7) And also see the attached screenshot of the error page.
+
+Expected Result: On clicking SAVE button, should be prompted to a success message “New User has been created successfully”.
+
+(Attach ‘application crash’ screenshot. IF any)
+
+Save the Defect/Bug in the BUG TRACKING TOOL.  You will get a Bug id, which you can use for further bug reference.
+Default ‘New Bug’ mail will go to the respective developer and the default module owner (Team leader or manager) for further action.
