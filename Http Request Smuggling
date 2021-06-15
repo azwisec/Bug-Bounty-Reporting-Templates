@@ -1,0 +1,25 @@
+HTTP REQUEST SMUGGLING
+
+Description:
+HTTP request smuggling is a technique for interfering with the way a web site processes sequences of HTTP requests that are received from one or more users. Request smuggling vulnerabilities are often critical in nature, allowing an attacker to bypass security controls, gain unauthorized access to sensitive data, and directly compromise other application users.
+
+Replication Steps:
+1.Right click on HTTP request smuggle issue in Issue tab in burpsuite.
+2.Click on smuggle CE.TL / TL.CE (As per your finding).
+3.Lauch attack and you will see there is a 404 request which is smuggled.
+
+Impact:
+Unauthenticated, remote attackers can randomly redirect active users to malicious websites, with no user-interaction required.
+
+Mitigation:
+Some generic ways to prevent HTTP request smuggling vulnerabilities arising are as follows:
+
+1.Disable reuse of back-end connections, so that each back-end request is sent over a separate network connection.
+2.Use HTTP/2 for back-end connections, as this protocol prevents ambiguity about the boundaries between requests.
+3.Use exactly the same web server software for the front-end and back-end servers, so that they agree about the boundaries between requests.
+
+In some cases, vulnerabilities can be avoided by making the front-end server normalize ambiguous requests or making the back-end server reject ambiguous requests and close the network connection. However, these approaches are potentially more error-prone than the generic mitigations identified above.
+
+I have also attached a video PoC. Kindly ask me if you need more information.
+
+Thank You
