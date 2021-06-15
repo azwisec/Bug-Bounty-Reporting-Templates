@@ -1,0 +1,34 @@
+No Rate Limiting on Password Reset Link
+
+Hi team,
+
+I found there is no rate limiting on reset password link
+
+Description :
+Rate limiting is used to control the amount of incoming and outgoing traffic to or from a network.
+If the number of requests you make exceeds that limit, then an error will be triggered. 
+The reasoning behind implementing rate limits is to allow for a better flow of data and to increase security by mitigating attacks such as DDoS.
+
+Replication Steps:
+
+Steps to perform this attack are:
+1.Click on forgot password
+2.Enter email and intercept that request.
+3.Send to intruder and select 'q' parameter as a injection point!
+4.Set payload type number and perform the below mentioned steps:
+
+From: 6
+To: 105
+
+Step: 1
+Hence you will have 100 payloads.
+
+5.Start attack and you will be receiving 100 emails.
+
+Kindly ask if you need more information or a video Poc
+
+Impact:
+This will lead to mass mailing to the targeted user, which will degrade the reputation of your company.
+
+Thank You
+
