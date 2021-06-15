@@ -1,0 +1,18 @@
+Description
+Cross-site request forgery (also known as CSRF) is a web security vulnerability that allows an attacker to induce users to perform actions that they do not intend to perform. It allows an attacker to partly circumvent the same origin policy, which is designed to prevent different websites from interfering with each other.
+
+Steps to Reproduce:
+1. Victim login their example account first.
+2. Attacker send a form/link to victim.
+3. If victim click the form/link, A desirable action could happen (eg- Profile Details Update or Email Password)
+4. Attacker successfully performs AT
+
+Impact : An Adversary can carry out CSRF attack to modify the details of a victim and also can take over the victim Account.
+
+Recommendations : This CSRF protection protects the form against Cross-site Request Forgery attacks because an attacker would also need to guess the token to successfully trick a victim into sending a valid request. The token should also be invalidated after some time and after the user logs out.
+
+References :
+https://owasp.org/www-community/attacks/csrf
+https://www.acunetix.com/websitesecurity/csrf-attacks/
+https://www.netsparker.com/blog/web-security/csrf-cross-site-request-forgery/
+Proof of Concept
