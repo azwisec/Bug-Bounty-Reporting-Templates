@@ -1,0 +1,20 @@
+DMARC
+
+Hi Team,
+
+I found a vulnerability where DMARC policy was not implemented.
+
+Replication steps:
+GO TO- https://mxtoolbox.com
+ENTER THE WEBSITE(target domain).CLICK GO.
+YOU WILL SEE THE FAULT( DMARC Policy Not Enabled)
+In the new page that loads change MXLookup to DMARCLookup
+POC:
+(Attach a screenshot of MX Lookup)
+
+Impact:
+Spammers can forge the "From" address on email messages to make messages appear to come from someone in your domain. If spammers use your domain to send spam or junk email, your domain quality is negatively affected. People who get the forged emails can mark them as spam or junk.
+
+Kindly tell me if you need more information.
+
+Thank You
