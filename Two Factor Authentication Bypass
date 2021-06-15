@@ -1,0 +1,23 @@
+Description:
+Two factor Authentication is a security measure which is provided by many sites to protect the user's account in case his/her credentials are compromised.
+
+Replication Steps:
+1.Go to (Your Target Domain)
+2.Click on “Turn on Multi Factor Authentication"
+3.Enter the authorization code, before clicking on "verify", make intercept on in burpsuite
+4.Capture/load request
+5.Do intercept >response to this request
+6.Copy the verified response to notepad, intercept off
+7.Go back to (Your Target Domain) and disable authentication.
+8.Click on "Turn on Multi Factor Authentication" again.
+9.Enter random authorization code(eg:123456) ,intercept on, load request, do intercept, response to this request ,click forward,replace and paste the previous verified response.
+10.Forward
+
+(2FA is enabled hence it is vulnerable.)
+
+Impact:
+This is a severe vulnerability, I recommend to accept this and fix it as soon as possible, because users trust this site for extra protection while enabling 2FA, but if it can be bypassed so easily it will harm your reputation and will also be inconvenient for the user.
+
+Kindly tell us know if you need more information. We have also attached a PoC with this report.
+
+Thank You
