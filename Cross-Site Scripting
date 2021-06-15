@@ -1,0 +1,28 @@
+Cross Site Scripting (XSS)
+
+Description
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+
+Severity : High
+
+Payload : Enter the payload here
+
+Complexity : Easy
+
+From : Remote / External
+
+Impact :
+XSS attack can take the cookie of the admin and login through Admin Account and can manage to login through any other user’s account with valid session cookies.
+
+Affected IP's : IP Address Port
+
+https://www.example.com/ 443
+
+Recommendations :
+Sanitize all the user inputs before executing them, also add XSS protection headers on server and client side.
+
+References :
+Reference 1
+Reference 2
+Reference 3
+Proof of Concept :
