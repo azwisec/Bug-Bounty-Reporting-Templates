@@ -1,0 +1,28 @@
+Description:
+Hello Team,
+OAUTH is a functionality used by a user for easy sign up or login on your domain. 
+In this account attacker can easily control victim’s account, if victim uses OAUTH functionality.
+
+Replication Steps:
+
+(ATTACKER PHASE)
+
+1.Make an account with victim’s email address and set password.
+2.Now you have access to victim’s account through password and email id .
+
+(VICTIM COMES )
+
+3.Victim will create account through google OAuth functionality.
+4.Thus, victim is not required to set password.
+
+(EXPLOIT)
+
+5.You can access victims account through password you set in attacker phase.
+6.So, you can use victim account whenever you want!
+
+MITIGATION:
+-Allow only OAuth sign up or Email address Sign up.
+-I have attached PoC for your ready reference.
+
+Thank you
+
