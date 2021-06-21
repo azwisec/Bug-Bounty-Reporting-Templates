@@ -1,0 +1,20 @@
+Description
+A link in https://target.com/path was broken and anyone could create that account which leads to account impersonate.
+
+Broken link hijacking (BLH) is a type of web attack. It exploits external links that are no longer valid. 
+If your website or web application uses resources loaded from external URLs or points to such resources and these 
+resources are no longer there (for example due to an expired domain), attackers can exploit these links to perform defacement, 
+impersonation, or even to launch cross-site scripting attacks.
+
+Steps To Reproduce:
+1.Visit the URL Specified.
+2.Click the vulnerable link that discribed.
+3.Create a URL or Account using the same brocken link.
+4.When someone clicked ont the url they are redirected to takeoverd account.
+
+Similar Report:
+
+Impact:
+Attackers can exploit these links to perform defacement, impersonation, or even to launch cross-site scripting attacks.
+
+[Create a proof of Concept Video also]
