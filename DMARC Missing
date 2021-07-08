@@ -1,0 +1,35 @@
+Server Security Misconfiguration > Mail Server Misconfiguration > No Spoofing Protection on Email Domain
+
+DMARC Policy Not Enabled.
+
+What is DMARC?
+DMARC (Domain-based Message Authentication Reporting and Conformance) is an email validation 
+system designed to protect your company’s email domain from being used for email spoofing,
+Check this Link https://www.dmarcanalyzer.com/dmarc/
+
+With the proof of concept image [image1.jpg]
+
+Here as you can see, there is the line “Your email service provider is Proofpoint” , 
+hence it is an email domain, and here as you can see “DMARC Policy Enabled” has a yellow tick, 
+which means, DMARC Policy is there but has not been properly enabled (i.e. p=none), so still chances of spoof emails to come into the inbox.
+
+POC:
+1.Go to https://mxtoolbox.com/
+2.Paste the westernunion.fr and check the dmarc result attached with attachements.
+
+Attack Scenario:
+Steps:
+1.Go to www.anonymailer.net
+2.In From Name write the name of target company.
+3.In From E-mail, write an email from your target domain, for eg: privacy@website.com.
+4.In To Email , write your email
+5.Now send the mail, and if you get the given mail in your inbox then it will be proved that it 
+is sending spoofed email directly to inbox, hence no spoofing protection on email domain.
+
+Tip: In privacy policy of the website there is always an email which could be used if it is an email domain.
+
+Impact:
+The most simple impact is that if there is no spoofing protection on target website, 
+attacker can impersonate as company and send emails to users from their email. 
+Now this could lead to many bad things like account takeover, or in case of e-banking website, 
+capturing funds of victims, etc like that, which will degrade the reputation of the company.
