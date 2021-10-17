@@ -1,0 +1,18 @@
+Summary: When uploading JPED images as a profile or logo in the application, the EXIF Meta data is not stripped or removoed or changed in any way.
+
+Description: EXIF stands for Exchangeable Image File Format, and it is mainly used for including metadata in various file types like txt, png, jpeg, pdf, HTML and many more. 
+When uploading an image into an application as a logo or profile picture with EXIF metadata on it, it isn't stripped out. This can lead to disclosure of location where photo was taken or other personal information by the photo uploader.
+And anyone can download the logo or image and can able to check the metadata.
+
+Steps To Reproduce:
+1.Upload a image with EXIF metadata on it.
+2.After uploading view the image or open the image in new tab [to get the image url ] and donwload the image.
+3.Use exif tool in kali linux or http://exif.regex.info/exif.cgi to view the metadata of the downloaded image.
+4.Check the Exif metadata stripped out or removed.
+
+POC:
+Attach a screen shot.
+
+Impact:
+An attacker could download the public images and can able to find sensitive metadata. Some phones attach metadata with the latitude/longitude of where the photo was taken and could leak important information, and it's just best practice as well to strip out all metadata from images when upload.
+ When a user uploads an image in example.com, the uploaded image’s EXIF Geolocation Data does not gets stripped. As a result, anyone can get sensitive information of example.com users like their Geolocation, their Device information like Device Name, Version, Software & Software version used etc.
