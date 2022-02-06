@@ -1,4 +1,4 @@
-Summary: When uploading JPED images as a profile or logo in the application, the EXIF Meta data is not stripped or removoed or changed in any way.
+Summary: When uploading JPEG images as a profile or logo in the application, the EXIF Meta data is not stripped or removoed or changed in any way.
 
 Description: EXIF stands for Exchangeable Image File Format, and it is mainly used for including metadata in various file types like txt, png, jpeg, pdf, HTML and many more. 
 When uploading an image into an application as a logo or profile picture with EXIF metadata on it, it isn't stripped out. This can lead to disclosure of location where photo was taken or other personal information by the photo uploader.
