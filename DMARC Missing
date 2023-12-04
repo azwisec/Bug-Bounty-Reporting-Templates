@@ -33,3 +33,7 @@ The most simple impact is that if there is no spoofing protection on target webs
 attacker can impersonate as company and send emails to users from their email. 
 Now this could lead to many bad things like account takeover, or in case of e-banking website, 
 capturing funds of victims, etc like that, which will degrade the reputation of the company.
+
+
+Ref:
+https://medium.com/techiepedia/how-to-report-dmarc-vulnerabilities-efficiently-to-earn-bounties-easily-f7a65ecdd20b
